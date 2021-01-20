@@ -4,7 +4,7 @@
 I've implemented custom spellcheck/autocorrect using the core concepts of probabilistic models without relying on NLP libraries like nltk or spacy. 
 
 ## Dataset
-Google n-grams being a very huge dataset and the others being paid, I decided to use stories of Sherlock Holmes( which I'm currently reading as well) as my dataset for the language model. The link is attached [herewith](http://norvig.com/big.txt). The code can be extrapolated to learn from bigger datasets.
+Google n-grams being a very huge dataset and the others being paid, I decided to use stories of Sherlock Holmes (which I'm currently reading as well) as my dataset (wordlist.txt) for the language model. The link is attached [herewith](http://norvig.com/big.txt). The code can be extrapolated to learn from bigger datasets.
 
 ## Salient Features 
   * The probability of a sentence is determined by interpolation of trigram, bigram, and unigram, the coefficients of which have been trained and determined by Adadelta/ Adam optimizer.
